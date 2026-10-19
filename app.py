@@ -1,4 +1,4 @@
-
+i
 from flask import Flask, jsonify
 
 app = Flask(__name__)
@@ -10,7 +10,7 @@ def home():
     <html>
         <head><title>DevOps Mastery</title></head>
         <body>
-            <h1>Welcome to My DevOps Application!</h1>
+            <h1>Welcome to DevOps Mastery - Main Branch!</h1>
             <p>Created by Shalbin K Eldo</p>
         </body>
     </html>

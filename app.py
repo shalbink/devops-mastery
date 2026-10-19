@@ -10,7 +10,7 @@ def home():
     <html>
     <head><title>DevOps Mastery</title></head>
     <body>
-        <h1>Welcome to DevOps Mastery!</h1>
+        <h1>Welcome to DevOps Mastery CI/CD!</h1>
     </body>
     </html>
     """

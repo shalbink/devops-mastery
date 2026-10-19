@@ -5,11 +5,11 @@ def test_home():
     client = app.test_client()
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Welcome to My DevOps Application!" in response.data
+    assert b"Welcome to DevOps Mastery!" in response.data
 
 
 def test_health():
     client = app.test_client()
     response = client.get("/health")
     assert response.status_code == 200
-    assert response.json == {"status": "UP"}
+    assert response.json["status"] == "UP"

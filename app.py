@@ -8,13 +8,10 @@ app = Flask(__name__)
 def home():
     return """
     <html>
-        <head>
-            <title>DevOps Mastery</title>
-        </head>
-        <body>
-            <h1>Welcome to DevOps Mastery - Develop Branch!</h1>
-            <p>Created by Shalbin K Eldo</p>
-        </body>
+    <head><title>DevOps Mastery</title></head>
+    <body>
+        <h1>Welcome to DevOps Mastery!</h1>
+    </body>
     </html>
     """
 
@@ -26,10 +23,10 @@ def health():
 
 @app.route("/about")
 def about():
-    return {
-        "application": "DevOps Mastery",
-        "author": "Shalbin K Eldo"
-    }
+    return jsonify(
+        application="DevOps Mastery",
+        message="A simple Flask application"
+    )
 
 
 if __name__ == "__main__":
